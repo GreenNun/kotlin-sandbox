@@ -15,3 +15,8 @@ inline fun runSimulation(playerName: String, greetingFunction: (String, Int) -> 
     val numBuildings = (1..3).shuffled().last()
     println(greetingFunction(playerName, numBuildings))
 }
+
+fun printConstructionCost(numBuildings: Int) {
+    val cost = 500
+    println("Construction cost: ${cost * numBuildings}")
+}
